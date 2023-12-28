@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7090bff9-7b36-4553-8799-6724dd98a116" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../demo_thymeleaf/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_thymeleaf/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_thymeleaf/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-thymelef/src/main/java/com/example/customermanagementthymelef/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-thymelef/src/main/java/com/example/customermanagementthymelef/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-thymelef/src/main/java/com/example/customermanagementthymelef/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-thymelef/src/main/java/com/example/customermanagementthymelef/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-thymelef/src/main/java/com/example/customermanagementthymelef/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-thymelef/src/main/java/com/example/customermanagementthymelef/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-thymelef/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-thymelef/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-thymelef/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-thymelef/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-thymelef/src/main/webapp/WEB-INF/views/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-thymelef/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-01-Tổng quan Spring MVC/QuanLyDanhSachKhachHang/src/main/java/com/example/quanlydanhsachkhachhang/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-01-Tổng quan Spring MVC/QuanLyDanhSachKhachHang/src/main/java/com/example/quanlydanhsachkhachhang/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-01-Tổng quan Spring MVC/QuanLyDanhSachKhachHang/src/main/java/com/example/quanlydanhsachkhachhang/service/impl/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-01-Tổng quan Spring MVC/QuanLyDanhSachKhachHang/src/main/java/com/example/quanlydanhsachkhachhang/service/impl/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-02-Spring Controller/calculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-02-Spring Controller/calculator/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../overview/buidGradle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../overview/buidGradle.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2a8EbKBvO3vKLw7B00BLUG16B8v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7090bff9-7b36-4553-8799-6724dd98a116" name="Changes" comment="" />
+      <created>1703691878511</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703691878511</updated>
+      <workItem from="1703691879538" duration="77000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

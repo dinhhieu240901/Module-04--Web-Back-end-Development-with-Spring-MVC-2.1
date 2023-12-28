@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="/layout :: head">
+    <title>Delete Customer</title>
+</head>
+<body>
+<div id="form">
+    <h3>Delete Customer</h3>
+    <p>Are you sure you want to delete the customer with the following details?</p>
+    <dl>
+        <dt>Name:</dt>
+        <dd th:text="${customer.getName()}"></dd>
+
+        <dt>Email:</dt>
+        <dd th:text="${customer.getEmail()}"></dd>
+
+        <dt>Address:</dt>
+        <dd th:text="${customer.getAddress()}"></dd>
+    </dl>
+
+    <form th:action="@{/customers/delete}" th:object="${customer}" method="post">
+        <input type="hidden" th:field="*{id}"/>
+        <button type="submit">Confirm Delete</button>
+    </form>
+
+    <a th:href="@{/customers}" class="action-link">Cancel</a>
+</div>
+
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-@Service
+@Service //class level
 public class CustomerService implements ICustomerService {
     @Autowired
     private ICustomerRepository customerRepository ;
