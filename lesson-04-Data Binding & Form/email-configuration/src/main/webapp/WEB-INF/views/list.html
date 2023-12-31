@@ -1,0 +1,68 @@
+
+<html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <title>Email Configuration List</title>
+    <style>
+        body{
+            font-family: Arial ,SansSerif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 50%;
+            margin:50px auto auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .table{
+            width: 100%;
+            margin-top: 15px;
+            border-collapse: collapse;
+        }
+        .table th .table td{
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .table th{
+            background-color: #4CAF50;
+            color: #fff;
+        }
+        a{
+            display: block;
+            margin-top: 15px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color:#45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Email Configuration List</h2>
+        <table class="table">
+            <thead>
+            <th>Language</th>
+            <th>Page Size</th>
+            <th>Spam Filter</th>
+            <th>Signature</th>
+            <th>Action</th>
+            </thead>
+            <tbody>
+                <tr th:each="email : ${emailList}" >
+                    <td th:text="${email.languages}"></td>
+                    <td th:text="${email.pageSize}"></td>
+                    <td th:text="${email.spamFilter}"></td>
+                    <td th:text="${email.signature}"></td>
+                    <td><a th:href="@{/email/edit/{id}(id=${email.id})}">Edit</a></td>                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

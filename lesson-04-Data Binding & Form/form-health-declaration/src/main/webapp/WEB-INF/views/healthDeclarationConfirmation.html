@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Xác nhận Tờ Khai Y Tế</title>
+</head>
+<body>
+<h2>Xác nhận Tờ Khai Y Tế</h2>
+
+<p style="color: green" th:text="${success}"></p>
+
+<h3>Thông tin đã khai báo:</h3>
+<p>Họ và tên: <span th:text="${healDeclaration.name}"></span></p>
+<p>Năm sinh: <span th:text="${healDeclaration.birthYear}"></span></p>
+<p>Giới tính: <span th:text="${healDeclaration.genders}"></span></p>
+<p>Quốc gia: <span th:text="${healDeclaration.national}"></span></p>
+<p>Số CMND: <span th:text="${healDeclaration.idCard}"></span></p>
+<p>Phương tiện di chuyển: <span th:text="${healDeclaration.vehicle}"></span></p>
+<p>Số đăng ký xe: <span th:text="${healDeclaration.licensePlate}"></span></p>
+<p>Số chỗ ngồi: <span th:text="${healDeclaration.numberOfSeat}"></span></p>
+<p>Ngày bắt đầu di chuyển: <span th:text="${healDeclaration.dateStart}"></span></p>
+<p>Ngày kết thúc di chuyển: <span th:text="${healDeclaration.dateEnd}"></span></p>
+<p>Thành phố đến: <span th:text="${healDeclaration.cityArrived}"></span></p>
+<p>Thành phố hiện tại: <span th:text="${healDeclaration.city}"></span></p>
+<p>Tỉnh/Thành phố: <span th:text="${healDeclaration.province}"></span></p>
+<p>Địa chỉ: <span th:text="${healDeclaration.address}"></span></p>
+<p>Số điện thoại: <span th:text="${healDeclaration.phoneNumber}"></span></p>
+<p>Email: <span th:text="${healDeclaration.email}"></span></p>
+
+<label>Triệu chứng:</label>
+<div th:each="symptom : ${healDeclaration.symptoms}">
+    <p th:text="${symptom.key + ': ' + (symptom.value ? 'Có' : 'Không')}"></p>
+</div>
+
+<label>Lịch sử tiếp xúc:</label>
+<div th:each="history : ${healDeclaration.exposureHistory}">
+    <p th:text="${history.key + ': ' + (history.value ? 'Có' : 'Không')}"></p>
+</div>
+
+
+<a th:href="@{/health-declaration/view}">Xem Tờ Khai</a>
+</body>
+</html>

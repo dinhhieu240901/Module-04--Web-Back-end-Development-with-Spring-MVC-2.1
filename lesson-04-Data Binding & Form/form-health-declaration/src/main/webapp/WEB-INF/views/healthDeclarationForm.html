@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Heal Declaration View</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p.error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h2>Biểu mẫu Tờ Khai Y Tế</h2>
+
+<form th:action="@{/form/submit}" th:object="${healDeclaration}" method="post" >
+    <label for="name">Họ và tên:</label>
+    <input type="text" id="name" name="name" th:field="*{name}" required><br>
+
+    <label for="birthYear">Năm sinh:</label>
+    <input type="number" id="birthYear" name="birthYear" th:field="*{birthYear}" required><br>
+    <label for="genders">Giới tính:</label>
+    <input type="text" id="genders" name="genders" th:field="*{genders}" required><br>
+    <label for="national">Quốc tịch:</label>
+    <input type="text" id="national" name="national" th:field="*{national}" required><br>
+    <label for="idCard">Số CMND:</label>
+    <input type="text" id="idCard" name="idCard" th:field="*{idCard}" required><br>
+    <label for="numberOfSeat">Số chỗ ngồi:</label>
+    <input type="number" id="numberOfSeat" name="numberOfSeat" th:field="*{numberOfSeat}" required><br>
+
+    <label for="dateStart">Ngày bắt đầu:</label>
+    <input type="date" id="dateStart" name="dateStart" th:field="*{dateStart}" required><br>
+
+    <label for="dateEnd">Ngày kết thúc:</label>
+    <input type="date" id="dateEnd" name="dateEnd" th:field="*{dateEnd}" required><br>
+
+    <label for="cityArrived">Thành phố đến:</label>
+    <input type="text" id="cityArrived" name="cityArrived" th:field="*{cityArrived}" required><br>
+
+    <label for="city">Thành phố:</label>
+    <input type="text" id="city" name="city" th:field="*{city}" required><br>
+
+    <label for="Province">Tỉnh/Thành phố:</label>
+    <input type="text" id="Province" name="Province" th:field="*{province}" required><br>
+
+    <label for="address">Địa chỉ:</label>
+    <input type="text" id="address" name="address" th:field="*{address}" required><br>
+
+    <label for="phoneNumber">Số điện thoại:</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" th:field="*{phoneNumber}" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" th:field="*{email}" required><br>
+    <label>Symptoms:</label>
+
+    <div th:each="symptom : ${healDeclaration.symptoms.entrySet()}">
+        <input type="checkbox" th:id="${symptom.key}" th:name="'symptoms[' + ${symptom.key} + ']'" th:checked="${symptom.value}"/>
+        <label th:for="${symptom.key}" th:text="${symptom.key}"></label><br>
+    </div>
+
+    <label>Exposure History:</label>
+    <div th:each="history : ${healDeclaration.exposureHistory.entrySet()}">
+        <input type="checkbox" th:id="${history.key}" th:name="'exposureHistory[' + ${history.key} + ']'" th:checked="${history.value}"/>
+        <label th:for="${history.key}" th:text="${history.key}"></label><br>
+    </div>
+    <button type="submit">Gửi Tờ Khai</button>
+</form>
+<div th:if="${#fields.hasErrors()}">
+    <p style="color: red">Vui lòng điền đầy đủ thông tin bắt buộc.</p>
+</div>
+</body>
+</html>

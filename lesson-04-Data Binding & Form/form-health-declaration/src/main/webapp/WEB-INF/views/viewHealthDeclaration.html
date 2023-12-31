@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View</title>
+</head>
+<body>
+<h3>Health Declaration View</h3>
+
+<table th:object="${healDeclaration}">
+    <tr>
+        <td>Name: </td>
+        <td th:text="*{name}"></td>
+    </tr>
+    <tr>
+        <td>Birth year:</td>
+        <td th:text="*{birthYear}"></td>
+    </tr>
+    <tr>
+        <td>Gender:</td>
+        <td th:text="*{genders}"></td>
+    </tr>
+    <tr>
+        <td>National:</td>
+        <td th:text="*{national}"></td>
+    </tr>
+    <tr>
+        <td>Id Card:</td>
+        <td th:text="*{idCard}"></td>
+    </tr>
+    <tr>
+        <td>Vehicle:</td>
+        <td th:text="*{vehicle}"></td>
+    </tr>
+    <tr>
+        <td>License Plate:</td>
+        <td th:text="*{licensePlate}"></td>
+    </tr>
+    <tr>
+        <td>Number of seat:</td>
+        <td th:text="*{numberOfSeat}"></td>
+    </tr>
+    <tr>
+        <td>Start date:</td>
+        <td th:text="*{dateStart}"></td>
+    </tr>
+    <tr>
+        <td>End date:</td>
+        <td th:text="*{dateEnd}"></td>
+    </tr>
+    <tr>
+        <td>City arrived:</td>
+        <td th:text="*{cityArrived}"></td>
+    </tr>
+    <tr>
+        <td>City:</td>
+        <td th:text="*{city}"></td>
+    </tr>
+    <tr>
+        <td>Province:</td>
+        <td th:text="*{province}"></td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td th:text="*{address}"></td>
+    </tr>
+    <tr>
+        <td>Phone number:</td>
+        <td th:text="*{phoneNumber}"></td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td th:text="*{email}"></td>
+    </tr>
+    <tr th:each="symptom : *{symptoms.entrySet()}">
+        <td th:text="${symptom.key}"></td>
+        <td th:text="${symptom.value}"></td>
+    </tr>
+    <tr th:each="symptom1 : ${#maps.entryset(*{exposureHistory})}">
+        <td th:text="${symptom1.key}"></td>
+        <td th:text="${symptom1.value}"></td>
+    </tr>
+</table>
+
+</body>
+</html>

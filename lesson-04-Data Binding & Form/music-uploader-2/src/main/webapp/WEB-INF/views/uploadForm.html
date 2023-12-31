@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Song</title>
+    <style>
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Upload Song</h2>
+
+    <form action="/song/upload" method="post" enctype="multipart/form-data" th:object="${songForm}">
+        <div class="form-group">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" th:field="*{id}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" th:field="*{name}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist" th:field="*{artist}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" th:field="*{genre}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="file">File:</label>
+            <input type="file" id="file" name="file" th:field="*{file}" accept=".mp3, .wav, .ogg, .m4p" required>
+        </div>
+
+        <button type="submit">Upload</button>
+    </form>
+
+    <p th:if="${message}" th:text="${message}" style="color: red;"></p>
+</div>
+
+</body>
+</html>
