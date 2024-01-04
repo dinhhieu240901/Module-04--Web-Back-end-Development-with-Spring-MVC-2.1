@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Name</th>
+        </tr>
+        <tr th:each="pr,element: ${provinces}">
+            <th th:text="${element.index+1}">STT</th>
+            <th th:text="${pr.name}">Name</th>
+        </tr>
+    </table>
+</body>
+</html>

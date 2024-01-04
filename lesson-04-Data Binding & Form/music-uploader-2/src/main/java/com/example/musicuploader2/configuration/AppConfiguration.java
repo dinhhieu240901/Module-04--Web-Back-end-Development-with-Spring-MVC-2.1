@@ -23,7 +23,7 @@ import org.thymeleaf.templatemode.TemplateMode;
 @PropertySource("classpath:upload_song.properties")
 
 public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAware {
-    @Value("file-upload")
+    @Value("${file-upload}")
     private String fileUpload;
     ApplicationContext applicationContext;
 
@@ -36,7 +36,7 @@ public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAwa
     public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setApplicationContext(applicationContext);
-        templateResolver.setPrefix("/WEB-INF/views");
+        templateResolver.setPrefix("/WEB-INF/views/");
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode(TemplateMode.HTML);
         templateResolver.setCharacterEncoding("UTF-8");

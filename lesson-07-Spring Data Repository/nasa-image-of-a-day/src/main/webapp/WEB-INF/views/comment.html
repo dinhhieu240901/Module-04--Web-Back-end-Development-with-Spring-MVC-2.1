@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout::head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết Comment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Chi tiết Comment</h2>
+
+    <div class="comment">
+        <strong th:text="${comment.authorName}"></strong>
+        <p th:text="${comment.commentText}"></p>
+        <p>Đánh giá: <span th:text="${comment.rating}"></span></p>
+        <p>Lượt thích: <span th:text="${comment.likes}"></span></p>
+    </div>
+
+    <form id="updateCommentForm" method="post" th:action="@{/comments/{id}/update(id=${comment.id})}">
+        <label for="rating">Cập nhật Đánh giá (1-5):</label>
+        <input type="number" id="rating" name="rating" min="1" max="5" th:value="${comment.rating}" required/>
+        <br>
+        <label for="authorName">Cập nhật tác giả:</label>
+        <input type="text" id="authorName" name="authorName" th:value="${comment.authorName}" required>
+        <br>
+        <label for="commentText">Cập nhật Lời nhận xét:</label>
+        <textarea id="commentText" name="commentText" th:text="${comment.commentText}" required></textarea>
+        <br>
+        <button type="submit">Cập nhật</button>
+    </form>
+
+    <a th:href="@{/comments}">Quay lại danh sách</a>
+</div>
+</body>
+</html>

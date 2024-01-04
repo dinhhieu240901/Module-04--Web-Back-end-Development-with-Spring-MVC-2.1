@@ -8,12 +8,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.io.File;
 import java.io.IOException;
@@ -35,32 +37,49 @@ public class SongController {
         return modelAndView;
     }
 
-    @PostMapping("/upload")
-    public ModelAndView handelFileUpload(@ModelAttribute("songForm") SongForm songForm) {
+
+    @PostMapping("/save")
+    public ModelAndView saveProduct(@ModelAttribute SongForm songForm,
+                                    BindingResult bindingResult,
+                                    RedirectAttributes redirectAttributes) {
+
         MultipartFile multipartFile = songForm.getFile();
-        if (!multipartFile.getOriginalFilename().endsWith(".mp3")
-                && !multipartFile.getOriginalFilename().endsWith(".wav")
-                && !multipartFile.getOriginalFilename().endsWith(".ogg")
-                && !multipartFile.getOriginalFilename().endsWith(".m4p")
-        ){
-            ModelAndView modelAndView = new ModelAndView("redirect:/song");
-            modelAndView.addObject("message","Only receive files with format .mp3, .wav, .ogg, .m4p");
-            return modelAndView;
+        if (multipartFile == null || multipartFile.isEmpty()) {
+            bindingResult.rejectValue("file", "file.empty", "Vui lòng chọn một file.");
+            return new ModelAndView("uploadForm");
         }
-        Song newSong = new Song(songForm.getId(),songForm.getName(), songForm.getArtist(), songForm.getGenre(), multipartFile.getOriginalFilename());
-        songService.save(newSong);
+
+        String fileName = multipartFile.getOriginalFilename();
+        if (!isValidFileExtension(fileName)) {
+            bindingResult.rejectValue("file", "file.invalid", "Chỉ chấp nhận file có đuôi .mp3, .wav, .ogg, .m4p");
+            return new ModelAndView("uploadForm");
+        }
         try {
-            FileCopyUtils.copy(songForm.getFile().getBytes(), new File(fileUpload + multipartFile.getOriginalFilename()));
-        }catch (IOException e){
-            e.printStackTrace();
+            FileCopyUtils.copy(multipartFile.getBytes(), new File(fileUpload + fileName));
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            redirectAttributes.addFlashAttribute("message", "Lỗi khi lưu trữ file.");
+            return new ModelAndView("redirect:/song");
         }
-        ModelAndView modelAndView = new ModelAndView("redirect:/songList");
-        modelAndView.addObject("message", "Uploaded song successfully !");
+        Song song = new Song(songForm.getId(), songForm.getName(),
+                songForm.getArtist(),songForm.getGenre(), fileName);
+        songService.save(song);
+        ModelAndView modelAndView = new ModelAndView("redirect:/song/list");
+        modelAndView.addObject("songForm", songForm);
+        modelAndView.addObject("message", "Tải lên bài hát thành công!");
         return modelAndView;
     }
-    @GetMapping("/songlist")
+
+    private boolean isValidFileExtension(String fileName) {
+        return fileName.toLowerCase().endsWith(".mp3") ||
+                fileName.toLowerCase().endsWith(".wav") ||
+                fileName.toLowerCase().endsWith(".ogg") ||
+                fileName.toLowerCase().endsWith(".m4p");
+    }
+    @GetMapping("/list")
     public ModelAndView showSongList(){
-        ModelAndView modelAndView = new ModelAndView("songList");
+        ModelAndView modelAndView = new ModelAndView("songLis" +
+                "t");
         List<Song> songs = songService.findAll();
         modelAndView.addObject("songs", songs);
         return modelAndView;

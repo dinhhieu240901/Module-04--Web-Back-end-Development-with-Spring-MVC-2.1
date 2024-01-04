@@ -61,7 +61,7 @@
 <div class="container">
     <h2>Upload Song</h2>
 
-    <form action="/song/upload" method="post" enctype="multipart/form-data" th:object="${songForm}">
+    <form th:action="@{/song/save}" method="post" th:object="${songForm}">
         <div class="form-group">
             <label for="id">ID:</label>
             <input type="text" id="id" name="id" th:field="*{id}" required>
@@ -90,7 +90,7 @@
         <button type="submit">Upload</button>
     </form>
 
-    <p th:if="${message}" th:text="${message}" style="color: red;"></p>
+    <p th:text="${message}" style="color: red;"></p>
 </div>
 
 </body>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Image of the Day</title>
+</head>
+<body>
+<div class="container">
+    <img id="img-of-the-day" style="width: 600px;height: 400px" src="https://wallpaperaccess.com/full/2051905.jpg">
+
+    <form id="commentForm" method="post" th:action="@{/comments}">
+        <label for="rating">Đánh giá (1-5):</label>
+        <input type="number" id="rating" name="rating" min="1" max="5" required>
+        <br>
+        <label for="authorName">Tên tác giả:</label>
+        <input type="text" id="authorName" name="authorName" required>
+        <br>
+        <label for="commentText">Lời nhận xét:</label>
+        <textarea id="commentText" name="commentText" required></textarea>
+        <br>
+        <button type="submit">Gửi đánh giá</button>
+    </form>
+    <div id="comments" th:each="comment : ${comments}" class="comment">
+        <strong th:text="${comment.authorName}">Author Name</strong>
+        <p th:text="${comment.commentText}">Comment Text</p>
+        <p>Đánh giá: <span th:text="${comment.rating}"></span> *</p>
+        <p>Lượt thích: <span th:text="${comment.likes}"></span></p>
+        <p>Lời đánh giá: <span th:text="${comment.commentText}"></span></p>
+        <form th:action="@{/comments/{id}/like(id=${comment.id})}" method="post">
+            <input type="submit" value="Like">
+        </form>
+        <a th:href="@{/comments/{id}(id=${comment.id})}">Chi tiết</a>
+    </div>
+</div>
+</div>
+
+<!--<script>-->
+<!--    let query = 'https://api.nasa.gov/planetary/apod?api_key=A3sO8ME4uOixnUTHOfajZe8XjWBzMB2OtOwVNLe2';-->
+<!--    let request = new XMLHttpRequest();-->
+<!--    request.open('GET', query);-->
+<!--    request.onload = function () {-->
+<!--        if (request.status === 200) {-->
+<!--            let response = JSON.parse(request.responseText);-->
+<!--            document.getElementById('img-of-the-day').setAttribute('src', response.url);-->
+<!--        }-->
+<!--    };-->
+<!--    request.send();-->
+<!--</script>-->
+</body>
+</html>
