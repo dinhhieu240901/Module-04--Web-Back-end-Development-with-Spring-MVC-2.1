@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h3 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h3>Phone Number</h3>
+<form action="#" th:action="@{/validate}" th:object="${phoneNumber}"
+      method="POST">
+    <table>
+        <tr>
+            <td>PhoneNumber</td>
+            <td><input type="text" th:field="*{number}"/></td>
+            <td class="error" th:if="${#fields.hasErrors('number')}" th:errors="*{number}">Name Error</td>
+        </tr>
+    </table>
+    <button type="submit">submit</button>
+</form>
+</body>
+</html>

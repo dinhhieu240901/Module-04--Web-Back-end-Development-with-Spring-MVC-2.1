@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        form {
+            width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px #000;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+        .error {
+            color: red;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Registration Form</h1>
+<form th:action="@{/users/validate}" th:object="${user}" method="post">
+    <table>
+        <tr>
+            <td>First name:</td>
+            <td><input type="text" th:field="*{firstName}"></td>
+            <td class="error" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">First name Error</td>
+        </tr>
+        <tr>
+            <td>Last name:</td>
+            <td><input type="text" th:field="*{lastName}"></td>
+            <td class="error" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Last name Error</td>
+        </tr>
+        <tr>
+            <td>Phone number:</td>
+            <td><input type="text" th:field="*{phoneNumber}"></td>
+            <td class="error" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}">Phone number Error</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" th:field="*{email}"></td>
+            <td class="error" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input type="text" th:field="*{age}"></td>
+            <td class="error" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</td>
+        </tr>
+    </table>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0015012-7b34-4a38-b1fe-24eee03070ec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Test-jpa/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test-jpa/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test-jpa/src/main/java/com/codegym/enitity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test-jpa/src/main/java/com/codegym/enitity/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test-jpa/src/main/java/com/codegym/repository/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test-jpa/src/main/java/com/codegym/repository/ICourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test-jpa/src/main/java/com/codegym/service/IServiceCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test-jpa/src/main/java/com/codegym/service/impl/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test-jpa/src/main/resources/db/manually/20240501-create-database-lms.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/java/com/codegym/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/java/com/codegym/exception/DuplicateEmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/java/com/codegym/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/java/com/codegym/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/java/com/codegym/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/java/com/codegym/service/IGenerateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/java/com/codegym/service/impl/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/webapp/WEB-INF/views/inputs-not-acceptable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/webapp/WEB-INF/views/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-manage-exception-handler/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/customize-phone-validate/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/customize-phone-validate/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/customize-phone-validate/src/main/java/com/codegym/controller/PhoneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/customize-phone-validate/src/main/java/com/codegym/model/PhoneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/customize-phone-validate/src/main/resources/validation-message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/customize-phone-validate/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/customize-phone-validate/src/main/webapp/WEB-INF/views/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/music-app-hibernate/src/main/java/com/example/musicapphibernate/repository/ISongRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-infor-user/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-infor-user/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-infor-user/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-infor-user/src/main/java/com/codegym/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-infor-user/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-infor-user/src/main/webapp/WEB-INF/views/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-register-form/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-register-form/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-register-form/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-register-form/src/main/java/com/codegym/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-register-form/src/main/java/com/codegym/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-register-form/src/main/java/com/codegym/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-register-form/src/main/java/com/codegym/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-register-form/src/main/resources/db/20240401-create-user-table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-register-form/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-register-form/src/main/webapp/WEB-INF/views/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspect/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspect/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspect/src/main/java/com/codegym/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspect/src/main/java/com/codegym/logger/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspect/src/main/java/com/codegym/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspect/src/main/java/com/codegym/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspect/src/main/java/com/codegym/service/impl/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspects/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspects/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspects/src/main/java/com/codegym/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspects/src/main/java/com/codegym/logger/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspects/src/main/java/com/codegym/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspects/src/main/java/com/codegym/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/customer-manage-aspects/src/main/java/com/codegym/service/impl/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/controller/CodeBorrowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/exception/NotAvailableException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/exception/WrongCodeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/model/Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/model/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/repository/IBookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/repository/ICodeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/repository/IStatusRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/service/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/service/ICodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/service/IStatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/service/impl/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/service/impl/CodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/java/com/codegym/service/impl/StatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/webapp/WEB-INF/views/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/webapp/WEB-INF/views/borrow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/webapp/WEB-INF/views/check.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/webapp/WEB-INF/views/code-borrow-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/webapp/WEB-INF/views/code-borrow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/webapp/WEB-INF/views/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/webapp/WEB-INF/views/return.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/library/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/nasa-image-of-a-day/src/main/java/com/example/nasaimageofaday/logger/BadWordsAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/nasa-image-of-a-day/src/main/resources/bad_word.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/nasa-image-of-a-day/src/main/webapp/WEB-INF/views/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/java/com/codegym/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/java/com/codegym/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/java/com/codegym/controller/ShoppingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/java/com/codegym/model/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/java/com/codegym/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/java/com/codegym/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/java/com/codegym/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/java/com/codegym/service/impl/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/webapp/WEB-INF/views/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/webapp/WEB-INF/views/error_404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/shopping-cart/src/main/webapp/WEB-INF/views/shop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/src/main/java/com/codegym/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/src/main/java/com/codegym/controller/CounterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/src/main/java/com/codegym/model/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-count-view/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/src/main/java/com/codegym/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/src/main/java/com/codegym/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-10-Session &amp; Cookie trong Spring/spring-save-username/src/main/webapp/WEB-INF/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-jpa/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-jpa/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-jpa/src/main/webapp/WEB-INF/views/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-jpa/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-jpa/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-jpa/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-07-Spring Data Repository/nasa-image-of-a-day/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-07-Spring Data Repository/nasa-image-of-a-day/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AppConfiguration" />
+        <option value="AppInit" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2aYn61EKp4ZlfqqkBp7YqX2gavU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/CodeGym/module-04-Web Back-end Development with Spring MVC 2.1/lesson-09-AOP & Exception Handling/library",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\module-04-Web Back-end Development with Spring MVC 2.1\lesson-06-JPA\library\src\main\webapp\WEB-INF\views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.83" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.83" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : com.example : library-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="60bc012c-07a6-4a5e-a22a-4a3c457dd16d" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52148" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : library-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0015012-7b34-4a38-b1fe-24eee03070ec" name="Changes" comment="" />
+      <created>1704504202782</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704504202782</updated>
+      <workItem from="1704504203826" duration="12927000" />
+      <workItem from="1704529785311" duration="14471000" />
+      <workItem from="1704594991062" duration="3014000" />
+      <workItem from="1704678565007" duration="80000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

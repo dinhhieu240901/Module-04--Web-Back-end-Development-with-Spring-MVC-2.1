@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Song</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Edit Song</h2>
+    <p th:if="${error}" th:text="${error}" style="color: red;"></p>
+    <form th:action="@{/songs/update}" method="post" enctype="multipart/form-data" th:object="${songForm}">
+        <input type="hidden" name="id" th:value="*{id}">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" th:value="*{name}" required>
+            <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}" style="color: red;"></p>
+        </div>
+        <div class="form-group">
+            <label for="artist">Artist:</label>
+            <input type="text" class="form-control" id="artist" name="artist" th:value="*{artist}" required>
+            <p th:if="${#fields.hasErrors('artist')}" th:errors="*{artist}" style="color: red;"></p>
+        </div>
+        <div class="form-group">
+            <label for="genre">Genre:</label>
+            <input type="text" class="form-control" id="genre" name="genre" th:value="*{genre}" required>
+            <p th:if="${#fields.hasErrors('genre')}" th:errors="*{genre}" style="color: red;"></p>
+        </div>
+        <div class="form-group">
+            <label for="filePath">File Path:</label>
+            <input type="file" class="form-control" id="filePath" name="filePath" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Update Song</button>
+    </form>
+</div>
+</body>
+</html>

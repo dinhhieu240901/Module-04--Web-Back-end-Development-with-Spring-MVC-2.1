@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th {
+            background-color: #4CAF50;
+            color: white;
+            text-align: left;
+            padding: 10px;
+        }
+
+        table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        .btn {
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .btn-success {
+            background-color: #4CAF50;
+        }
+
+        .btn-success:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<p>
+    <a href="/shop">Shop</a>
+</p>
+<h1>Your Cart</h1>
+<form th:action="@{/shop}" th:object="${cart}" method="post">
+    <h3>Total Items: <span th:text="${cart.countItemQuantity()}"></span></h3>
+    <h3>Total Products: <span th:text="${cart.countProductQuantity()}"></span></h3>
+    <table border="1">
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+
+        </tr>
+        <tr th:each="product: ${cart.products}">
+            <td th:text="${product.getKey().name}"></td>
+            <td>
+                <a id="decrease_button" th:href="@{/delete/__${product.getKey().id}__(action='show')}" th:text="${'-'}" class="btn btn-success"></a>
+                <span th:text="${product.getValue()}"></span>
+                <a id="increase_button" th:href="@{/add/__${product.getKey().id}__(action='show')}"
+                   th:text="${'+'}" class="btn btn-success"></a>
+            </td>
+            <td th:text="${product.getKey().price}"></td>
+            <td>
+                <a th:href="@{/delete_all/__${product.getKey().id}__}" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td></td>
+            <td th:text="${cart.countTotalPayment()}"></td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>

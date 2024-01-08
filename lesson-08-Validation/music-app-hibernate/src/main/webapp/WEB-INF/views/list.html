@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100">
+
+<div class="container mt-5">
+    <p style="color:red; font-size: 15px;">
+        <span th:text="${message}"></span>
+        <span th:text="${success}"></span>
+    </p>
+    <h2 class="text-2xl font-bold mb-4">Song List</h2>
+    <table class="table-auto border border-collapse w-full">
+        <thead>
+        <tr class="bg-gray-200">
+            <th class="py-2 px-4 border">ID</th>
+            <th class="py-2 px-4 border">Name</th>
+            <th class="py-2 px-4 border">Artist</th>
+            <th class="py-2 px-4 border">Genre</th>
+            <th class="py-2 px-4 border">File Path</th>
+            <th class="py-2 px-4 border">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="song : ${songs}" class="border">
+            <td class="py-2 px-4 border" th:text="${song.id}"></td>
+            <td class="py-2 px-4 border" th:text="${song.name}"></td>
+            <td class="py-2 px-4 border" th:text="${song.artist}"></td>
+            <td class="py-2 px-4 border" th:text="${song.genre}"></td>
+            <td class="py-2 px-4 border">
+                <audio controls>
+                    <source th:src="@{'/song/' + ${song.filePath}}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td class="py-2 px-4 border">
+                <a th:href="@{/songs/{id}/edit(id=${song.id})}" class="btn btn-warning">Edit</a>
+                <form th:action="@{/songs/delete}" method="post" class="inline-block">
+                    <input type="hidden" name="id" th:value="${song.id}">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a th:href="@{/songs/create}" class="btn btn-primary mt-4">Add New Song</a>
+</div>
+
+</body>
+</html>

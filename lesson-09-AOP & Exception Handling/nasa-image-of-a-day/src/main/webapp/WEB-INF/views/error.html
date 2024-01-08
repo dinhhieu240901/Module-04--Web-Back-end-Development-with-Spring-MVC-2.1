@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .error-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .error-container h1 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        .error-container p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .error-container a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="error-container">
+    <h1>Error</h1>
+    <p th:text="${errorMessage}"></p>
+    <a href="/comments">Back to comments</a>
+</div>
+</body>
+</html>
