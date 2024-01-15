@@ -4,8 +4,10 @@ import com.codegym.model.Blog;
 import com.codegym.model.Category;
 import com.codegym.service.blog.IBlogService;
 import com.codegym.service.category.ICategoryService;
-import com.google.protobuf.ApiProto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -81,9 +83,15 @@ public class BlogController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
     @GetMapping("/search")
-    public ResponseEntity<Iterable<Blog>> searchBlogs(@RequestParam String keyword) {
-        Iterable<Blog> blogsList = blogService.findByTitleContaining(keyword);
-        List<Blog> blogs = (List<Blog>) blogsList;
+    public ResponseEntity<Iterable<Blog>> searchBlogs(
+            @RequestParam String keyword,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "20") int pageSize) {
+
+        Pageable pageable = PageRequest.of(page, pageSize);
+        Page<Blog> blogsPage = blogService.findByNameContaining(keyword, pageable);
+
+        List<Blog> blogs = blogsPage.getContent();
 
         if (blogs.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
@@ -91,9 +99,10 @@ public class BlogController {
 
         return new ResponseEntity<>(blogs, HttpStatus.OK);
     }
+
     @GetMapping("/loadMore")
-    public ResponseEntity<Iterable<Blog>> loadMoreBlogs(@RequestParam int page) {
-        Iterable<Blog> blogsList = blogService.loadMoreBlogs(page, 20);
+    public ResponseEntity<Iterable<Blog>> loadMoreBlogs(@RequestParam int page, @RequestParam int pageSize) {
+        Iterable<Blog> blogsList = blogService.loadMoreBlogs(page, pageSize);
         List<Blog> blogs = (List<Blog>) blogsList;
 
         if (blogs.isEmpty()) {

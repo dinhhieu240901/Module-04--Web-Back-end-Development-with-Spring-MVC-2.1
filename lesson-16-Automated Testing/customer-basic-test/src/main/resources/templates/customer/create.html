@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Add Customer</h3>
+<p>
+    <a th:href="@{/customers}">
+        Back to customer list
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/customers/save}" th:object="${customer}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <table>
+            <tr>
+                <td><label for="fName">First Name</label></td>
+                <td><input id="fName" type="text" th:field="*{firstName}"/></td>
+            </tr>
+            <tr>
+                <td><label for="lName">Last Name</label></td>
+                <td><input id="lName" type="text" th:field="*{lastName}"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Save"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

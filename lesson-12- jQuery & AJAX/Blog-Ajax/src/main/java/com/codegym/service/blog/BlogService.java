@@ -39,8 +39,9 @@ public class BlogService implements IBlogService {
     }
 
     @Override
-    public List<Blog> findByTitleContaining(String keyword) {
-        return blogRepository.findByNameContaining(keyword);
+    public Page<Blog> findByNameContaining(String keyword, Pageable pageable)
+    {
+        return blogRepository.findByNameContaining(keyword, pageable);
     }
 
     @Override
@@ -48,7 +49,6 @@ public class BlogService implements IBlogService {
         Pageable pageable = PageRequest.of(page, pageSize);
         return blogRepository.findAll(pageable).getContent();
     }
-
     @Override
     public Iterable<Blog> findAllByCategory(Category category) {
         return blogRepository.findAllByCategory(category);

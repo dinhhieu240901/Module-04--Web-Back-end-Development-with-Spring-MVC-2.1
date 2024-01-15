@@ -7,9 +7,10 @@
 </head>
 <body>
 <form id="searchForm">
-    <input type="text" id="searchInput" placeholder="Nhập từ khóa...">
+    <input type="text" id="searchInput" placeholder="Nhập từ khóa..." required>
     <button type="button" onclick="searchBlogs()">Tìm kiếm</button>
 </form>
+
 
 <div id="blogList"></div>
 <button id="loadMoreBtn" onclick="loadMoreBlogs()">Tải thêm</button>
@@ -31,12 +32,17 @@
     }
 
     function searchBlogs() {
-        currentPage = 0; // Reset trang khi tìm kiếm
-        const keyword = $('#searchInput').val();
+        currentPage = 0;
+        const keyword = $('#searchInput').val().trim();
+        if (keyword.length === 0) {
+            alert('Vui lòng nhập từ khóa tìm kiếm.');
+            return;
+        }
+        const pageSize = 20;
 
         $.ajax({
             type: 'GET',
-            url: `http://localhost:8080/api/blogs/search?keyword=${keyword}&page=${currentPage}`,
+            url: `http://localhost:8080/api/blogs/search?keyword=${keyword}&page=${currentPage}&pageSize=${pageSize}`,
             success: function (data) {
                 displayBlogList(data);
             },
@@ -46,13 +52,15 @@
         });
     }
 
+
     function loadMoreBlogs() {
         currentPage++;
         const keyword = $('#searchInput').val();
+        const pageSize = 20;
 
         $.ajax({
             type: 'GET',
-            url: `http://localhost:8080/api/blogs/search?keyword=${keyword}&page=${currentPage}`,
+            url: `http://localhost:8080/api/blogs/search?keyword=${keyword}&page=${currentPage}&pageSize=${pageSize}`,
             success: function (data) {
                 if (data.length > 0) {
                     displayBlogList(data);

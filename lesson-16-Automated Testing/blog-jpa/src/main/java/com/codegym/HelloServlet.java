@@ -1,4 +1,4 @@
-package com.codegym.demo;
+package com.codegym;
 
 import java.io.*;
 import javax.servlet.http.*;

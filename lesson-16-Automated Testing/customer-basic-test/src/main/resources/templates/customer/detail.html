@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Customer detail</h1>
+<p>
+    <a th:href="@{/customers}">
+        Back to customer list
+    </a>
+</p>
+<p th:text="${customer.firstName}"></p>
+<p th:text="${customer.lastName}"></p>
+<p th:text="----------"></p>
+</body>
+</html>
