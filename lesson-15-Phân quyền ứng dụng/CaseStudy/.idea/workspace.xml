@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d971705b-b199-4f1d-9f98-0106910bd1fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/java/com/codegym/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/java/com/codegym/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/java/com/codegym/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/java/com/codegym/repository/IBlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/java/com/codegym/repository/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/java/com/codegym/service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/java/com/codegym/service/blog/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/java/com/codegym/service/blog/IBlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/java/com/codegym/service/category/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/java/com/codegym/service/category/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/Blog-Ajax/src/main/webapp/WEB-INF/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/jQuery-demo/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/jQuery-demo/css/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/phone-management-ajax-web-service/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/phone-management-ajax-web-service/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/phone-management-ajax-web-service/src/main/java/com/codegym/controller/SmartPhoneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/phone-management-ajax-web-service/src/main/java/com/codegym/model/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/phone-management-ajax-web-service/src/main/java/com/codegym/repository/ISmartphoneRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/phone-management-ajax-web-service/src/main/java/com/codegym/service/ISmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/phone-management-ajax-web-service/src/main/java/com/codegym/service/SmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/phone-management-ajax-web-service/src/main/webapp/WEB-INF/ajax/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/phone-management-ajax-web-service/src/main/webapp/WEB-INF/ajax/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/phone-management-ajax-web-service/src/main/webapp/WEB-INF/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/phone-management-ajax-web-service/src/main/webapp/WEB-INF/resources/styles/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-12- jQuery &amp; AJAX/phone-management-ajax-web-service/src/test/ajax/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-13- I18N/customer-province-management/src/main/resources/message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-13- I18N/customer-province-management/src/main/resources/message_vi.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-13- I18N/spring-internationalize/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-13- I18N/spring-internationalize/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-13- I18N/spring-internationalize/src/main/java/com/codegym/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-13- I18N/spring-internationalize/src/main/java/com/codegym/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-13- I18N/spring-internationalize/src/main/resources/message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-13- I18N/spring-internationalize/src/main/resources/message_hawwai.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-13- I18N/spring-internationalize/src/main/webapp/WEB-INF/views/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-13- I18N/spring-internationalize/src/main/webapp/WEB-INF/views/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-14-Bảo mật ứng dụng web trong Spring/spring-security/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-14-Bảo mật ứng dụng web trong Spring/spring-security/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-14-Bảo mật ứng dụng web trong Spring/spring-security/src/main/java/com/codegym/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-14-Bảo mật ứng dụng web trong Spring/spring-security/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-14-Bảo mật ứng dụng web trong Spring/spring-security/src/main/java/com/codegym/security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-14-Bảo mật ứng dụng web trong Spring/spring-security/src/main/java/com/codegym/security/SecurityInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-14-Bảo mật ứng dụng web trong Spring/spring-security/src/main/webapp/WEB-INF/views/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-14-Bảo mật ứng dụng web trong Spring/spring-security/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-14-Bảo mật ứng dụng web trong Spring/spring-security/src/main/webapp/WEB-INF/views/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson-14-Bảo mật ứng dụng web trong Spring/spring-security/src/main/webapp/WEB-INF/views/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-authorization/src/main/java/com/codegym/configuration/AppConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-authorization/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-authorization/src/main/java/com/codegym/controller/CustomSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-authorization/src/main/java/com/codegym/controller/SecurityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-authorization/src/main/java/com/codegym/security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-authorization/src/main/java/com/codegym/security/SecurityInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-authorization/src/main/webapp/WEB-INF/views/access_denied.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-authorization/src/main/webapp/WEB-INF/views/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-authorization/src/main/webapp/WEB-INF/views/dba.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-authorization/src/main/webapp/WEB-INF/views/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/jwt/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/jwt/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/jwt/RestAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/jwt/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/jwt/config/SecurityInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/jwt/service/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/jwt/service/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/model/UserPrinciple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/model/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-jwt/src/main/java/com/codegym/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-08-Validation/validate-register-form/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-08-Validation/validate-register-form/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/nasa-image-of-a-day/src/main/java/com/example/nasaimageofaday/logger/BadWordsAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-09-AOP &amp; Exception Handling/nasa-image-of-a-day/src/main/java/com/example/nasaimageofaday/logger/BadWordsAspect.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2aoK0CdeZndQ6PC41cYo7LYTvjE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "main",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="CaseStudy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="CaseStudy" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d971705b-b199-4f1d-9f98-0106910bd1fa" name="Changes" comment="" />
+      <created>1704979269031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704979269031</updated>
+      <workItem from="1704979270075" duration="8000" />
+      <workItem from="1704979359489" duration="114000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Effects Practice</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    #demoText {
+      font-size: 18px;
+      margin-top: 20px;
+      transition: all 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <button id="hideButton">Hide</button>
+  <button id="showButton">Show</button>
+  <button id="startAnimationButton">Start Animation</button>
+</div>
+
+<p id="demoText">If you click on the "Hide" button, I will disappear.</p>
+
+<script>
+  $(document).ready(function () {
+    $("#hideButton").click(function () {
+      $("#demoText").hide();
+    });
+
+    $("#showButton").click(function () {
+      $("#demoText").show();
+    });
+
+    $("#startAnimationButton").click(function () {
+      $("#demoText").animate({
+        left: "100px",
+        fontSize: "50px"
+      },1000);
+    });
+  });
+</script>
+
+</body>
+</html>

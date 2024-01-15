@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="/layout :: head">
+
+    <title th:text="#{list.customer.title}">List Customer</title>
+</head>
+<body>
+<h3 th:text="#{list.customer.h1}">Customers</h3>
+<p>
+    <a th:href="@{/customers/create}" th:text="#{list.customer.create}"></a>
+</p>
+<p>
+    <a th:href="@{/provinces}" th:text="#{list.province.title}"></a>
+</p>
+
+<p>
+    <span>Change language:</span>
+    <a href="?lang=en" >English</a> |
+    <a href="?lang=vi" >Tiếng Việt</a>
+</p>
+
+<div style="margin-bottom: 10px; margin-left: 110px">
+    <form th:action="@{/customers/search}" method="get">
+        <label><input type="text" name="search"></label>
+        <button type="submit" class="btn btn-primary" th:text="#{list.search}">Search</button>
+    </form>
+</div>
+<div class="notify">
+    <div th:if="${message}">
+        <span th:text="${message}"></span>
+    </div>
+</div>
+
+<table id="customers">
+    <thead>
+    <tr>
+        <th th:text="#{list.orderNumber}"></th>
+        <th th:text="#{list.customer.firstname}"></th>
+        <th th:text="#{list.customer.lastname}"></th>
+        <th th:text="#{list.province.h1}"></th>
+        <th th:text="#{button.update}">Update</th>
+        <th th:text="#{button.delete}">Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="c,cStatus : ${customers}">
+        <td th:text="${cStatus.count}"></td>
+        <td th:text="${c.getFirstName()}"></td>
+        <td th:text="${c.getLastName()}"></td>
+        <td th:text="${c.getProvince().getName()}"></td>
+        <td><a th:href="@{/customers/update/{id}(id=${c.getId()})}" th:text="#{button.update}"></a></td>
+        <td><a th:href="@{/customers/delete/{id}(id=${c.getId()})}" th:text="#{button.delete}"></a></td>
+    </tr>
+    </tbody>
+</table>
+<a class="btn btn-primary" th:if="${customers.hasPrevious()}"
+   th:href="@{/customers/page(page=${customers.number - 1})}" th:text="#{list.previous}">Previous</a>
+<span th:text="${customers.number + 1}"></span> | <span th:text="${customers.totalPages}" ></span>
+<a class="btn btn-primary" th:if="${customers.hasNext()}"
+   th:href="@{/customers/page(page=${customers.number + 1})}" th:text="#{list.next}">Next</a>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

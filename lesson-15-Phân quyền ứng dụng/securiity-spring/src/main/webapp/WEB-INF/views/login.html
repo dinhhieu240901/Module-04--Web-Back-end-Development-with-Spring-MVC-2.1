@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+</head>
+<body>
+
+
+<h1>Login</h1>
+
+
+<h3>Enter email and password:</h3>
+<form name='f' th:action="@{/perform_login}" method='POST'>
+    <table>
+        <tr>
+            <td>Email:</td>
+            <td><input type='email' name='email' value=''></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type='password' name='password' /></td>
+        </tr>
+        <tr>
+            <td>Remember Me?</td>
+            <td><input type="checkbox" name="remember-me" /></td>
+        </tr>
+        <tr>
+            <td><input name="submit" type="submit" value="submit" /></td>
+        </tr>
+    </table>
+</form>
+s
+<br>
+Username/pass:
+<ul>
+    <li>admin@example/123</li>
+    <li>dbadmin1/123</li>
+</ul>
+
+</body>
+
+</html>
